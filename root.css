@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-gradient: linear-gradient(
+    135deg,
+    var(--clr-purple-light),
+    var(--clr-purple-dark)
+  );
+  --clr-purple-border: #ecd0f6;
+  --clr-purple-light: #950add;
+  --clr-purple-dark: #7506b0;
+  --clr-shadow: #00000033;
+  --clr-white: #ffffff;
+  --size-0: 0;
+  --size-2: 2px;
+  --size-5: 5px;
+  --size-10: 10px;
+  --size-48: 48px;
+  --size-70: 70px;
+  --size-200: 200px;
+  --size-999: 999px;
+  --size-sudo-elements: calc(var(--size-70) - calc(var(--size-10) * 2));
+}

@@ -1,0 +1,54 @@
+#logo-container {
+  height: var(--size-200);
+  width: var(--size-200);
+  border-radius: var(--size-999);
+  background: var(--clr-gradient);
+}
+
+#ring {
+  height: var(--size-200);
+  width: var(--size-200);
+  background-color: transparent;
+  border-radius: var(--size-999);
+}
+
+.square {
+  height: var(--size-70);
+  width: var(--size-70);
+  background-color: var(--clr-white);
+  transform: rotateZ(45deg);
+  border-radius: var(--size-5);
+}
+
+#left {
+  border-style: solid;
+  border-width: var(--size-10);
+  height: var(--size-70);
+  width: var(--size-70);
+  left: var(--size-48);
+  border-color: var(--clr-purple-border);
+  background-color: var(--clr-purple-border);
+}
+
+#left::before {
+  content: "";
+  position: inherit;
+  height: var(--size-sudo-elements);
+  width: var(--size-sudo-elements);
+  background-color: var(--clr-purple-border);
+}
+
+#left::after {
+  content: "";
+  position: inherit;
+  background: var(--clr-gradient);
+  border-radius: var(--size-2);
+  height: var(--size-sudo-elements);
+  width: var(--size-sudo-elements);
+}
+
+#right {
+  right: var(--size-48);
+  box-shadow: calc(var(--size-5) * -1) var(--size-5) var(--size-10)
+    var(--size-0) var(--clr-shadow);
+}

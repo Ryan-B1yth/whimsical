@@ -1,0 +1,62 @@
+#logo-container:hover .square {
+  animation-name: spin;
+  animation-duration: 4s;
+}
+
+#logo-container:hover #ring {
+  animation-name: press;
+  animation-duration: 1s;
+  animation-delay: 4.5s;
+}
+
+#logo-container:hover {
+  animation-name: scale;
+  animation-duration: 5s;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(45deg);
+  }
+
+  100% {
+    transform: rotateZ(1485deg);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.5);
+    box-shadow: var(--size-10) var(--size-10) var(--size-5) var(--size-5)
+      var(--clr-shadow);
+  }
+  85% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  88% {
+  }
+  92% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes press {
+  0% {
+    transform: scale(1);
+  }
+  93% {
+    background-color: var(--clr-purple-dark);
+    transform: scale(2);
+  }
+  97% {
+    opacity: 0;
+  }
+}
